@@ -1,6 +1,6 @@
 {
   "name": "gladys-radioemitter",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Gladys modules sending 433Mhz signal to control RF switch",
   "main": "index.js",
   "scripts": {
