@@ -1,15 +1,15 @@
 # Gladys radioemitter
 
-Radio emitter is used to control radio plugs.
+RadioEmitter is used to control radio devices and receive datas from sensors.
 
 ## Installation
 
-- First, install the [Serial](https://developer.gladysproject.com/en/modules/serial) module in Gladys
+If you had previous version of this module(and had serial module installed), you need to uninstall it as it is not needed anymore and can cause this module to fail.
+
 - Then, install this module in Gladys
-- Push the [arduino code](https://github.com/GladysProject/gladys-radioemitter/blob/master/arduino-code.ino) to your arduino with the [Arduino IDE](https://www.arduino.cc/en/main/software). You need to have `ArduinoJson` and [`433MHzForArduino`](https://bitbucket.org/fuzzillogic/433mhzforarduino/src) libraries installed. To install the libraries, in the arduino IDE (version > 1.6) go to "Sketch" => "Include Library" => "Manage Libraries". Then search "ArduinoJson" and click on "install".
+- Push the [arduino code](https://github.com/isokar/gladys-radioemitter/blob/master/new_433_gladys.ino) to your arduino with the [Arduino IDE](https://www.arduino.cc/en/main/software). You need to have `ArduinoJson` and [`433MHzForArduino`](https://bitbucket.org/fuzzillogic/433mhzforarduino/src) libraries installed. To install the libraries, in the arduino IDE (version > 1.6) go to "Sketch" => "Include Library" => "Manage Libraries". Then search "ArduinoJson" and click on "install".
 - Reboot Gladys
 - Connect your arduino in USB to your Raspberry Pi
-- Click on the "config" button of the "Serial" module in the "Modules" view. 
 - Create a device in Gladys in the Device view with the following info => 
 
 ### For old fashion
