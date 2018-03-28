@@ -37,7 +37,3 @@ If you had previous version of this module(and had serial module installed), you
 | type | min | max 
 | ---| ---| ---|
 | binary | 0 | 1
-
-## Credits
-
-Thanks to [Irumi](https://community.gladysproject.com/u/irumi/summary) for the first version of this module :)
