@@ -40,7 +40,7 @@ void SendRadioCode(unsigned int period, long code) {
 
   // Wait 0.5 seconds before sending.
   delay(500);
-   // Retransmit the signal 8 times ( == 2^3) on pin 11. Note: no object was created!
+   // Retransmit the signal 8 times ( == 2^3) on pin 10. Note: no object was created!
   RemoteTransmitter::sendCode(10, code, period, 3);//old period : 536
 
   RemoteReceiver::enable();
@@ -58,9 +58,9 @@ void SendNewCode(unsigned int period, unsigned long address, boolean groupBit, i
   delay(500);
   
 
-  // Create a new transmitter with the received address and period, use digital pin 11 as output pin
+  // Create a new transmitter with the received address and period, use digital pin 10 as output pin
 
-  NewRemoteTransmitter transmitter(address, 11, period);
+  NewRemoteTransmitter transmitter(address, 10, period);
 
   
   // On/Off signal received
