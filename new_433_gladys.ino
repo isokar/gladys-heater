@@ -14,7 +14,7 @@
  *
  * Configuration  
  * Pin 2 => interruption 0 => radio receiver
- * Pin 11 => 433Mhz emitter
+ * Pin 10 => 433Mhz emitter
  * 
  * Wait for a JSON on serial port. When a JSON is received, it calls the right function
  * Code example : (the % is for the end of the command). Put thats code into the serial to test
@@ -41,7 +41,7 @@ void SendRadioCode(unsigned int period, long code) {
   // Wait 0.5 seconds before sending.
   delay(500);
    // Retransmit the signal 8 times ( == 2^3) on pin 11. Note: no object was created!
-  RemoteTransmitter::sendCode(11, code, period, 3);//old period : 536
+  RemoteTransmitter::sendCode(10, code, period, 3);//old period : 536
 
   RemoteReceiver::enable();
 }
