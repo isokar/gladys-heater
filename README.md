@@ -8,8 +8,9 @@ If you had previous version of this module(and had serial module installed), you
 
 - Then, install this module in Gladys
 - Push the [arduino code](https://github.com/isokar/gladys-radioemitter/blob/master/new_433_gladys.ino) to your arduino with the [Arduino IDE](https://www.arduino.cc/en/main/software). You need to have `ArduinoJson` and [`433MHzForArduino`](https://bitbucket.org/fuzzillogic/433mhzforarduino/src) libraries installed. To install the libraries, in the arduino IDE (version > 1.6) go to "Sketch" => "Include Library" => "Manage Libraries". Then search "ArduinoJson" and click on "install".
-- Reboot Gladys
 - Connect your arduino in USB to your Raspberry Pi
+- Reboot Gladys
+- check your console for the correct serial_port ton configure for your Arduino(if you change the parameter, Gladys need to reboot to take it into account)
 - To add devices to Gladys you can just activate it(via remote control for exemple). Otherwise, you can create manually in the Device view with the following info => 
 
 ### For old fashion
