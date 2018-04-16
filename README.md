@@ -1,16 +1,16 @@
 # Gladys radioemitter
 
-RadioEmitter is used to control radio devices and receive datas from sensors.
+RadioEmitter is used to control radio devices and receive datas from sensors. This version is now compatible with various brand such as DI-O.
 
 ## Installation
 
-If you had previous version of this module(and had serial module installed), you need to uninstall it as it is not needed anymore and can cause this module to fail.
+If you had previous version of this module(and had serial module installed), you need to uninstall it as it is not needed anymore and can cause this module to fail(two modules can't connect to the same serial interface).
 
 - Then, install this module in Gladys
 - Push the [arduino code](https://github.com/isokar/gladys-radioemitter/blob/master/new_433_gladys.ino) to your arduino with the [Arduino IDE](https://www.arduino.cc/en/main/software). You need to have `ArduinoJson` and [`433MHzForArduino`](https://bitbucket.org/fuzzillogic/433mhzforarduino/src) libraries installed. To install the libraries, in the arduino IDE (version > 1.6) go to "Sketch" => "Include Library" => "Manage Libraries". Then search "ArduinoJson" and click on "install".
 - Reboot Gladys
 - Connect your arduino in USB to your Raspberry Pi
-- Create a device in Gladys in the Device view with the following info => 
+- To add devices to Gladys you can just activate it(via remote control for exemple). Otherwise, you can create manually in the Device view with the following info => 
 
 ### For old fashion
 
